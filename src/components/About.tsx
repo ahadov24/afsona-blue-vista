@@ -18,7 +18,7 @@ const About = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="glass-effect p-6 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300 animate-scale-in"
+                className="glass-effect p-6 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300 animate-scale-in noise-texture"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>

@@ -28,12 +28,12 @@ const Navigation = () => {
           isScrolled ? "top-2" : "top-4"
         }`}
       >
-        <div className="backdrop-blur-xl bg-card/80 border border-border/50 rounded-full shadow-glow px-6 py-3 transition-all duration-300 hover:shadow-glow">
+        <div className="glass-effect rounded-full shadow-glow px-6 py-3 transition-all duration-300 hover:shadow-glow noise-texture">
           <div className="flex items-center gap-6">
             <div className="text-lg font-bold gradient-text cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
               Afsona
             </div>
-            <div className="w-px h-6 bg-border/50" />
+            <div className="w-px h-6 bg-white/20" />
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -56,7 +56,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       <nav className="md:hidden fixed top-4 left-4 right-4 z-50">
-        <div className="backdrop-blur-xl bg-card/80 border border-border/50 rounded-full shadow-card px-4 py-3">
+        <div className="glass-effect rounded-full shadow-card px-4 py-3 noise-texture">
           <div className="flex items-center justify-between">
             <div className="text-lg font-bold gradient-text cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
               Afsona
@@ -72,7 +72,7 @@ const Navigation = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
-          <div className="mt-2 backdrop-blur-xl bg-card/90 border border-border/50 rounded-3xl shadow-glow p-4 space-y-2 animate-fade-in">
+          <div className="mt-2 glass-effect rounded-3xl shadow-glow p-4 space-y-2 animate-fade-in noise-texture">
             {navItems.map((item) => (
               <button
                 key={item.id}

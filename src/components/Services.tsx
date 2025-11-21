@@ -17,14 +17,19 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group glass-effect p-8 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300 animate-fade-in-up"
+              className="group glass-effect p-8 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300 animate-fade-in-up noise-texture overflow-hidden relative"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="h-7 w-7 text-white" />
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-accent/0 group-hover:from-primary/10 group-hover:to-accent/10 transition-all duration-300" />
+              
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-glow">
+                  <service.icon className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

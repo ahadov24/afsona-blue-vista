@@ -105,6 +105,10 @@ export default {
         "pulse": {
           "0%, 100%": { opacity: "1", transform: "scale(1)" },
           "50%": { opacity: "0.7", transform: "scale(1.05)" }
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
         }
       },
       animation: {
@@ -114,6 +118,7 @@ export default {
         "fade-in-up": "fade-in-up 0.8s ease-out",
         "scale-in": "scale-in 0.5s ease-out",
         "float": "float 6s ease-in-out infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
       },
     },
   },
