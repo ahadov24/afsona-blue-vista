@@ -18,9 +18,9 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8 animate-fade-in-up">
-            <div className="glass-effect p-6 rounded-2xl shadow-card">
+            <div className="glass-effect p-6 rounded-2xl shadow-card noise-texture">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0 shadow-glow">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -30,9 +30,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="glass-effect p-6 rounded-2xl shadow-card">
+            <div className="glass-effect p-6 rounded-2xl shadow-card noise-texture">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0 shadow-glow">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -42,9 +42,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="glass-effect p-6 rounded-2xl shadow-card">
+            <div className="glass-effect p-6 rounded-2xl shadow-card noise-texture">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0 shadow-glow">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -55,17 +55,17 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="glass-effect p-8 rounded-2xl shadow-card space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <form className="glass-effect p-8 rounded-2xl shadow-card space-y-6 animate-fade-in-up noise-texture" style={{ animationDelay: '0.2s' }}>
             <div>
-              <Input placeholder="Your Name" className="bg-background/50" />
+              <Input placeholder="Your Name" className="glass-effect border-white/30" />
             </div>
             <div>
-              <Input type="email" placeholder="Your Email" className="bg-background/50" />
+              <Input type="email" placeholder="Your Email" className="glass-effect border-white/30" />
             </div>
             <div>
-              <Textarea placeholder="Your Message" rows={6} className="bg-background/50 resize-none" />
+              <Textarea placeholder="Your Message" rows={6} className="glass-effect border-white/30 resize-none" />
             </div>
-            <Button className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300">
+            <Button className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full">
               Send Message
             </Button>
           </form>
