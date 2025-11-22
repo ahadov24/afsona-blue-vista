@@ -35,15 +35,15 @@ const Hero = () => {
               {/* Main orb body with glass effect and hero background */}
               {/* <div className="absolute inset-12 rounded-full overflow-hidden backdrop-blur-xl border border-white/10 shadow-2xl">
                 {/* Hero background gradient matching */}
-                <div className="absolute inset-0 bg-gradient-mesh bg-[length:200%_200%] animate-gradient-shift opacity-40" />
+                {/* <div className="absolute inset-0 bg-gradient-mesh bg-[length:200%_200%] animate-gradient-shift opacity-40" /> */}
                 
                 {/* Dark center with radial gradient overlay */}
-                <div 
+                {/* <div 
                   className="absolute inset-0 mix-blend-multiply"
                   style={{
                     background: 'radial-gradient(circle at center, hsl(220 50% 10%), hsl(220 90% 25%) 40%, hsl(220 90% 45%) 70%, hsl(200 100% 60%))'
                   }}
-                /> */}
+                />  */}
                 
                 {/* Animated rotating gradient layer */}
                 {/* <div 
