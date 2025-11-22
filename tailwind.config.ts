@@ -114,6 +114,15 @@ export default {
         "gradient-shift": {
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" }
+        },
+        "orb-rotate": {
+          "0%": { transform: "rotate(0deg) scale(1)" },
+          "50%": { transform: "rotate(180deg) scale(1.1)" },
+          "100%": { transform: "rotate(360deg) scale(1)" }
+        },
+        "orb-pulse": {
+          "0%, 100%": { opacity: "0.8", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.05)" }
         }
       },
       animation: {
@@ -125,6 +134,8 @@ export default {
         "float": "float 6s ease-in-out infinite",
         "spin-slow": "spin-slow 8s linear infinite",
         "gradient-shift": "gradient-shift 8s ease infinite",
+        "orb-rotate": "orb-rotate 10s ease-in-out infinite",
+        "orb-pulse": "orb-pulse 4s ease-in-out infinite",
       },
     },
   },
