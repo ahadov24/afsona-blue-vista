@@ -64,6 +64,7 @@ export default {
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-accent': 'var(--gradient-accent)',
+        'gradient-mesh': 'var(--gradient-mesh)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',
@@ -109,6 +110,10 @@ export default {
         "spin-slow": {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" }
+        },
+        "gradient-shift": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" }
         }
       },
       animation: {
@@ -119,6 +124,7 @@ export default {
         "scale-in": "scale-in 0.5s ease-out",
         "float": "float 6s ease-in-out infinite",
         "spin-slow": "spin-slow 8s linear infinite",
+        "gradient-shift": "gradient-shift 8s ease infinite",
       },
     },
   },
