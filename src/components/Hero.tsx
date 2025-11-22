@@ -7,27 +7,82 @@ const Hero = () => {
       {/* Animated gradient background */}
       <div className="absolute inset-0 -z-10 bg-gradient-mesh bg-[length:200%_200%] animate-gradient-shift" />
 
-      {/* Modern gradient circle with noise */}
+      {/* Deep Blue Energy Orb */}
       <div className="absolute top-24 left-1/2 -translate-x-1/2 z-10">
-        <div className="relative w-64 h-64 md:w-80 md:h-80">
-          {/* Outer glow layers */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-accent to-primary opacity-20 blur-3xl animate-pulse" />
-          <div className="absolute inset-2 rounded-full bg-gradient-to-tr from-accent via-primary to-accent opacity-30 blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <div className="relative w-80 h-80 md:w-96 md:h-96">
+          {/* Outer deep-blue glow layers */}
+          <div 
+            className="absolute inset-0 rounded-full blur-3xl opacity-60 animate-orb-pulse"
+            style={{
+              background: 'radial-gradient(circle, hsl(220 90% 45% / 0.8), hsl(220 90% 45% / 0.4), transparent 70%)',
+              boxShadow: 'var(--orb-glow)'
+            }}
+          />
+          <div 
+            className="absolute inset-4 rounded-full blur-2xl opacity-70"
+            style={{
+              background: 'radial-gradient(circle, hsl(200 100% 60% / 0.6), transparent 60%)',
+              animation: 'orb-pulse 4s ease-in-out infinite 0.5s'
+            }}
+          />
           
-          {/* Main gradient circle with glassmorphism */}
-          <div className="absolute inset-8 rounded-full backdrop-blur-2xl bg-gradient-to-br from-primary/40 via-accent/30 to-primary/40 border border-white/20 shadow-glow overflow-hidden">
+          {/* Main orb body with glass effect */}
+          <div className="absolute inset-12 rounded-full overflow-hidden backdrop-blur-xl border border-white/10 shadow-2xl">
+            {/* Dark center with radial gradient */}
+            <div 
+              className="absolute inset-0"
+              style={{
+                background: 'radial-gradient(circle at center, hsl(220 50% 10%), hsl(220 90% 25%) 40%, hsl(220 90% 45%) 70%, hsl(200 100% 60%))'
+              }}
+            />
+            
+            {/* Animated rotating gradient layer */}
+            <div 
+              className="absolute inset-0 animate-orb-rotate opacity-80"
+              style={{
+                background: 'conic-gradient(from 0deg at 50% 50%, transparent 0deg, hsl(200 100% 60% / 0.8) 60deg, transparent 120deg, hsl(220 90% 55% / 0.6) 240deg, transparent 300deg)',
+                mixBlendMode: 'screen'
+              }}
+            />
+            
+            {/* Inner neon-blue highlight streak */}
+            <div 
+              className="absolute top-[20%] left-[25%] w-[35%] h-[35%] rounded-full blur-xl opacity-90 animate-orb-pulse"
+              style={{
+                background: 'radial-gradient(ellipse at center, hsl(200 100% 60% / 0.9), hsl(200 100% 60% / 0.4) 50%, transparent 70%)',
+                transform: 'rotate(-35deg)',
+                animationDelay: '1s'
+              }}
+            />
+            
+            {/* Additional depth layer */}
+            <div 
+              className="absolute inset-0 opacity-50"
+              style={{
+                background: 'radial-gradient(circle at 35% 35%, hsl(200 100% 70% / 0.4), transparent 50%)',
+              }}
+            />
+            
             {/* Noise texture overlay */}
-            <div className="absolute inset-0 noise-texture opacity-50" />
+            <div className="absolute inset-0 noise-texture opacity-30 mix-blend-overlay" />
             
-            {/* Inner gradient layer */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent animate-pulse" style={{ animationDelay: '1s' }} />
-            
-            {/* Animated gradient ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-60 blur-md animate-spin-slow" />
+            {/* Glass-like edge highlight */}
+            <div 
+              className="absolute inset-0 rounded-full"
+              style={{
+                background: 'radial-gradient(circle at 30% 25%, hsl(0 0% 100% / 0.3), transparent 40%)',
+              }}
+            />
           </div>
 
-          {/* Inner core glow */}
-          <div className="absolute inset-12 rounded-full bg-gradient-to-br from-primary/60 to-accent/60 blur-xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+          {/* Soft shadow beneath */}
+          <div 
+            className="absolute inset-16 rounded-full blur-2xl opacity-40"
+            style={{
+              background: 'radial-gradient(circle, hsl(220 90% 20%), transparent 60%)',
+              transform: 'translateY(20px)'
+            }}
+          />
         </div>
       </div>
 
