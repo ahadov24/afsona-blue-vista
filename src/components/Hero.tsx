@@ -4,15 +4,12 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-      </div>
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-mesh bg-[length:200%_200%] animate-gradient-shift" />
 
       {/* Modern gradient circle with noise */}
-      <div className="absolute top-32 left-1/2 -translate-x-1/2 z-10">
-        <div className="relative w-40 h-40 md:w-48 md:h-48 animate-float">
+      <div className="absolute top-24 left-1/2 -translate-x-1/2 z-10">
+        <div className="relative w-64 h-64 md:w-80 md:h-80">
           {/* Outer glow layers */}
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-accent to-primary opacity-20 blur-3xl animate-pulse" />
           <div className="absolute inset-2 rounded-full bg-gradient-to-tr from-accent via-primary to-accent opacity-30 blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }} />
