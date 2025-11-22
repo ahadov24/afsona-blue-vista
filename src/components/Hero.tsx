@@ -9,7 +9,7 @@ const Hero = () => {
 
       {/* Deep Blue Energy Orb */}
       <div className="absolute top-24 left-1/2 -translate-x-1/2 z-10">
-        <div className="relative w-80 h-80 md:w-96 md:h-96">
+        <div className="relative w-64 h-64 md:w-80 md:h-80">
           {/* Outer deep-blue glow layers */}
           <div 
             className="absolute inset-0 rounded-full blur-3xl opacity-60 animate-orb-pulse"
