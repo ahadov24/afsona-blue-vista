@@ -103,13 +103,13 @@ const Hero = () => {
             Building tomorrow's solutions with innovative technology and forward-thinking strategies
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <button size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full" onClick={() => scrollToSection("contact")}>
+            <Button size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full" onClick={() => scrollToSection("contact")}>
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30">
+            </Button>
+            <Button size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30">
               Learn More
-            </button>
+            </Button>
           </div>
         </div>
       </div>
