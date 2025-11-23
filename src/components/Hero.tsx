@@ -99,13 +99,13 @@ const Hero = () => {
             Building tomorrow's solutions with innovative technology and forward-thinking strategies
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full">
+            <a size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full">
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30">
+            </a>
+            <a size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30" href='#about'>
               Learn More
-            </Button>
+            </a>
           </div>
         </div>
       </div>
