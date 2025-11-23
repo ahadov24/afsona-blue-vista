@@ -18,7 +18,7 @@ const Projects = () => {
       title: "AI Analytics Dashboard",
       description: "Real-time data visualization and insights",
       category: "Data Science",
-      size: "medium"
+      size: "tall"
     },
     {
       title: "Cloud Infrastructure",
@@ -44,6 +44,8 @@ const Projects = () => {
     switch (size) {
       case "large":
         return "md:col-span-2 md:row-span-2";
+      case "tall":
+        return "md:col-span-1 md:row-span-3";
       case "medium":
         return "md:col-span-1 md:row-span-2";
       default:
