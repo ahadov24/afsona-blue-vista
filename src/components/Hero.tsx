@@ -107,7 +107,7 @@ const Hero = () => {
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30" href='#about'>
+            <button size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30">
               Learn More
             </button>
           </div>
