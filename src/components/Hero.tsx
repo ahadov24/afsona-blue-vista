@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated gradient background */}
@@ -99,13 +103,13 @@ const Hero = () => {
             Building tomorrow's solutions with innovative technology and forward-thinking strategies
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <a size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full">
+            <button size="lg" className="group bg-gradient-primary hover:shadow-glow transition-all duration-300 rounded-full" onClick={() => scrollToSection("contact")}>
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30" href='#about'>
+            </button>
+            <button size="lg" variant="outline" className="glass-effect hover:bg-primary/10 rounded-full border-white/30" href='#about'>
               Learn More
-            </a>
+            </button>
           </div>
         </div>
       </div>
